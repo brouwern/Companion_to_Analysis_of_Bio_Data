@@ -1,0 +1,54 @@
+---
+title: "Reading Guide Test 2 - Chapter 9 Analysis of Biological Data 2nd ed."
+author: "brouwern@gmail.com"
+date: "October 2, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## CHAPTER 9: CONTINGENCY ANALYSIS: Associations between categorical variables
+
+I don't emphasize this chapter because a) contingency tables are usually covered in intro stats courses and b) I want to get to **logistic regression** by the end of the course, which represents a more contemporary approach to the analysis of categorical data.  There are several general aspects of the analysis of categorical data using contingency tables and the chi^2 test that I do want students to know.  I highlight the relevant sections from the book below.  Overall I want you to know what a contginecy table is, how to identify the response and predictors with this type of data, and that chi^2 tests and logistic regression are used to analyze this type of data.  I did not discuss any of the calcualtions related to chi^2 tests, or even discuss how to do it in R.  Because of this, I don't indicate which sections can be skipped - unless listed below, a section can be skipped.
+
+#### Examples of categorical resposne variables
+
+The authors list several types of categorical data on page 235 - these are good examples to understand.
+
+**Contingency analysis** "estimates and tests for an association between two or more categorical variables" (pg 236).
+
+In R-like code, this would be
+categorical.response ~ categorical.predictor
+
+#### Example 9.3: Your litter box and your brain
+
+You should be able to recognize this type of data as being categorical data which can be analyized using a contingency table or chi^2 test (or also logistic regression).
+
+#### Table 9.3-1
+
+You should be able to recognize this type of data as being categorical data which can be analyized using a contingency table or chi^2 test (or also logistic regression).
+
+### 9.4 The Chi^2 contingency test
+
+Also just called the chi^2 test.  You should read this section from page 246-247.
+
+#### Example 9.4: The gnarly worm gets the bird
+
+You should be able to recognize this type of data as being categorical data which can be analyized using a contingency table or chi^2 test (or also logistic regression).  I discussed this example in lecture.
+
+#### Hypotheses
+
+I did not phrase the hypothesis like this; I said soemthing more like 
+
+* Ho: parasite infection is not related to being eaten
+* Ha: paraiste infection is related to being eaten
+
+Instead o "is related to" one could say "predicts" , eg, "parasite infection predicts whether a fish is eaten or not""
+
+#### Example 9.5: The feeding habits of vampire bats
+
+You should be able to recognize this type of data as being categorical data which can be analyized using a contingency table or chi^2 test (or also logistic regression). 

@@ -1,0 +1,43 @@
+---
+title: "Whitlock and Shulter Chapter 2 Homework problmes"
+author: "brouwern@gmail.com"
+date: "September 2, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+
+Reproduce histogram similar to data in Question 20, page 58
+```{r}
+dat <- c(rep(10.5,50),
+rep(11.5,550),
+rep(12.5,110),
+rep(13.5,75),
+rep(14.5,100),
+rep(15.5,75),
+rep(16.5,50))
+```
+
+```{r}
+hist(dat)
+boxplot(dat)
+```
+
+
+## Modified data
+```{r}
+dat2 <- c(runif(min = 10,max = 11,n= 50),
+          runif(min = 11,max = 12,n= 110),
+          runif(min = 12,max = 13,n= 75),
+          runif(min = 13,max = 14,n= 550),
+          runif(min = 14,max = 15,n= 75),
+          runif(min = 15,max = 16,n= 100),
+          runif(min = 16,max = 17,n= 50))
+
+boxplot(dat2)
+```
+

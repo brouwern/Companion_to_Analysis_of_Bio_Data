@@ -1,0 +1,148 @@
+---
+title: "Reading Guide Test 2 - Chapter 12 Analysis of Biological Data 2nd ed."
+author: "brouwern@gmail.com"
+date: "October 2, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## CHAPTER 6: HYPOTHESIS TESTING
+
+A key phrase: "Estimation asks, 'how large is the effect?' Hypothesis testing asks, 'Is there any effect at all.'" (pg 149).  This relates to the fact that the alternative hypothesis (Ha) is very general.
+
+Another key prhase: "Hypothesis testing quantifieds how unusual the data are. assuming that the null hypothesis is true" (pg 150).  I refered in lecture to the idea of test statistics and p-values as "indices of surprise", which relates to this idea.
+
+
+**Hypothesis testings** "compares data to waht we would expect to see if a specific null hypothesis were true.  If the data are not too unusal, comapred to what we woudl expect to see if the null hypothesis were true, then the null hypothesis is rejected." (pg 150)
+
+### 6.1 Making and using statistical hypothesis
+
+#### Null hypothesis
+
+aka Ho
+
+**Null hypothesis**
+
+#### Alternative hypothesis
+
+aka Ha.  When I read this section for the 1st time I finally realized how vauge Ha is...
+
+**Alternative hypothesis**  "inclues all other feasible values for the population parameter [mu] besides the value stated in the null hypothesis"" [usually 0 or a difference of 0; 50% for probabilites] (pg 153)
+
+### 6.2 Hypothesis testing: an example
+
+I went over this example in detail during my lecturees
+
+The four steps of hypothesis testing: you should know each one
+
+1. State....
+2. Compute....
+3. Determine...
+4. Draw the appropriate...
+
+#### Example 6.2 The right hand of toad
+
+I like this example, and hence used it in class
+
+#### Stating hypotheses
+
+Note that for probabilities and proportions the null hypothesis (Ho) is usually 50%, 0.5, etc.  This is in contrast to t-tests and ANOVA, where the null is that there is no difference between groups (mean.1 - mean.2 = 0)
+
+**Two-sided test**
+
+#### Test statistic
+
+**Test statistic**
+
+Sometiems just called "test-stat."  For a proportion, as in the frog example, its just the observed number of events (eg, number of Righted handed toads).  For t-tests, ANOVA, regression it requires more math.  T-tests use the t-stat, ANOVA uses the F-stats.
+
+#### The null distribution
+
+This is a tricky but key idea.  Hypothesis testing is all about comparing the observed test stat to a **sampling distribution** built by assuming that the null hypothesis is true.
+
+**Null distribution** "the sampling distribution of outcomes for a test statistic under that assumption that the null hypothesis is true" (pg 155).    That is, the distribution of test stats you'd get in a world where the null was indeed true.
+
+
+#### Table 6.2-1
+
+I replicated this table in my lecture.  You should know how it was made.
+
+
+#### Quantifying uncertainty: the P-value
+
+**P-value** "the probability of obtaining the data (or data showing as great or greate difference from the null hypothesis) if the null were true." (pg 157).  Is calcualted from the null distribution for a particular study.
+
+You need to know this defintion, and be able to spot incorrect definitions of p-values.
+
+
+#### Figure 6.2-2
+
+I replicated this figure in my lecture.  You should know how it was made.
+
+
+#### Draw the appropriate conclusion
+
+**Significance level alpha** (pg 159)
+
+#### Reporting results
+
+Your authors say you need to report
+
+1. test stats
+2. sample size
+3. p-value
+
+I also say you should report means, effect sizes, and confidence intervals.
+
+### 6.3 Errors in hypothesis testings
+
+#### Type I and Type II errors
+
+#### Table 6.3-1
+
+I did not present a table like this but its a standard way to discuss type I vs. type II erors
+
+**Type I error**
+
+**Type II error**
+
+**Power** "the power of a test is the probability that a random sample will elad to a rejection of a false null hypothesis." (pg 161).  That is, the ability to reject the null when it actually is false.
+
+#### Other types of errors
+
+I also discussed the following types of errors
+
+**Type III errors** rejecting a false null for the wrong reason; getting the right answer for the wrong reason.
+
+**Type S errors** sign errors
+
+**Type M errors** magnitude errors
+
+### 6.4 When the null hypothesis is not rejected
+
+#### Example 6.4: The genetics of mirror-image flowers
+
+An example of getting a high p value.
+
+#### Figure 6.4-1
+
+You should understand how this figure is derived
+
+#### Interpreting a non-significant results.
+
+You should know whether you can or can't "prove" a null hypothesis.
+
+### 6.5 One-sided tests
+
+You just need to know that you shouldn't use them.
+
+### Hypothesis testing versus confidence intervals
+
+You should know how they are related, but why CIs provide more information
+
+### 6.7 Summary

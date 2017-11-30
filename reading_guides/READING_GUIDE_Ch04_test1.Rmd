@@ -1,0 +1,97 @@
+---
+title: "Reading Guide Test 1 - Chapter 4 Analysis of Biological Data 2nd ed."
+author: "brouwern@gmail.com"
+date: "October 2, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Chapter 4 Estimating with Uncertainty
+
+### 4.1 The sampling distribution of an estimate
+
+Vocab:
+**Estimation:** "The process of inferring a population  parameter [eg "mu"] from sample data" (pg 96)"
+
+**Sampling distribution:** "the probability distribution of all the values for an estimate that we *might* have obtained when we sampled the population" (pg 96)
+
+#### Example 4.1 The Length of Human genes
+
+This example is central to the chapter and was the focus of several of my lectures.  
+
+**Figure 4.1-1** The empirical (real) distribution of lengths all genes in the human genome.  This is **NOT** a **sampling distribution.**  A sampling distribution is a distribution of possible values of y.bar, the mean from a sample.
+
+### Estimating mean gene length with a random sample
+
+**Figure 4.1-2** The distribution of a random sample of 100 genes.  This is again **NOT** a sampling distribution, but the distribution of a single random sample taken from the whole population of genes.  What they are plotting here is the length of genes.  Note the X-axis of the histogram says "gene length."  Compare this with Figure 4.1-3.
+
+### The sampling distribution of Y.bar
+
+Vocab:
+**Sampling distribution:** "The probability distribution of all values for an estimate that we might obtain when we sample a population" (pg 99).  That is, a theoretical distribution of many replications of the same study or experiment.
+
+**Figure 4.1-3**
+This **IS** a **sampling distribution.**  What they are plotting here is the mean length of genes from many replicated studies.  Note what how the x-axis is labeled: "Sample mean length Y.bar"
+
+**Figure 4.1-4**
+These are **sampling distributions.**  Note the x-axis.  How the shape of the sampling distribution changes as sample size increases is very important.  A wide sampling distribution means you could get and estimate (Y.bar) that is not very accurate.  A narrow sampling distribution means your Y.bar is likely to be pretty close to the truth.
+
+**Key Point:** "Increasing sampling size reduces the spread of the sampling distribution of an estimate, increasing precision" (pg 100)
+
+### 4.2 Measuring the uncertainty of an estiamte
+
+#### Standard error (SE)
+
+Vocab
+**Standard error (SE)** A general definition:"The standard error (SE) of an estimate [Y.bar] is the standard deviation (SD) of the  estimate's sampling distribution." (pg 101).  Standard errors come in different flavors depending and exactly the kind of data your are working with.  This is a generic definition that applies to all SEs.
+
+### The Standard error of Y.bar
+
+### The standard error of Y.bar from data
+
+Like most stats books, they give you 2 equations, one assuming you somehow know the "True" standard deviation of the population (the "population standard deviation of the variable Y.bar", page 101, middle of page) and one equation for the real situation where you have calculate the SD from data. They really should emphasize that "population standard deviation of the variable Y.bar" is never ever known, except in the fanciful world of statisticians brains.
+
+
+
+Vocab:
+**Standard error of the mean** (precise definition for y.bar; this applies to many of the circumstances where you'll want to calculate an SE): "The standard error of the mean is estimate from data as the sample standard deviation (S) divided by the square root of the sample size (n)" (pg 102). 
+
+The equation for the standard error of a mean (y.bar) is:
+\[SE = \frac{SD}{\sqrt{N}}\]
+
+I won't ask you a question like "write out the equation for the standard error" but I could ask a question like "what is the numerator in this equation" and show you the equation for the SE.
+
+A very important point is that the SE depending on the sample size.  The larger the sample size, the smaller the sample size.  A large sample size improve precision of the estimate of y.hat and is reflected in a small SE and narrow error bars around the estimate.
+
+
+### 4.3 Confidence Interval (pg 102)
+
+This is a very very important section! 
+
+Vocab
+**Confidence Interval:** "A confidence interval is a range of values surrounding the sample estimate that is likely to contain the population parameter [mu]" (pg 102)
+
+**95% confidence Interval**  They say "The 95% Confidence interval provides a most-plausible range for a parameter.  Values lying within the interval or more plausible, whereas those outside are less plausible, based on the data."  95% is a convention that most scientists stick to and relates to the typical p-value of 0.05 (1-0.05 = 0.95.)
+
+### The 2SE Rule of them
+
+Vocab
+**2SE Rule of Thumb** "A rough approximately of a 95% confidence interval for a mean  can be calculated as the sample mean [y.hat] plus and minus 2 standard errors." (page 104)  More precisely, 1.96.
+
+
+### 4.4 Error bars
+
+Always put error bars around mean values!  IF you report a mean, report the precision of that mean, which requires report the SE  or 95% CI and plotting error bars.  95% CI is preferable to SE!
+
+Vocab
+
+**Error bars:** "Lines on a a graph extending outward from the sample estimate [usually Y.bar] to illustrate uncertainty about the value of the parameter being estimated" (pg 105).  Can be an SE or 95%CI.  95%CI are recommended.  Very rarely is the SD.
+
+**Figure 4.4-2**: 
+Great figure demonstrating the difference between the raw data, which has a huge range, the smallness of the SE, the 95%CI, and the SD.
+

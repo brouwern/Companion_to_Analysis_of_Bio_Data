@@ -1,0 +1,125 @@
+---
+title: "Reading Guide Test 2 - Chapter 12 Analysis of Biological Data 2nd ed."
+author: "brouwern@gmail.com"
+date: "October 2, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## CHAPTER 12: COMPARING TWO MEANS
+
+This chapter introduces paired an normal t-tests.
+
+### 12.1 Paried samples versus two independent samples
+
+Need to Know the difference!
+
+#### Figure 12.1-1
+
+Very good figure
+
+**Paried design** goes with a paired t-test
+
+**Two-sample design** goes with a 2-sample aka standard t-test.
+
+### 12.2 Paired comparisons of means
+
+Good examples of usage on pag 329-330.
+
+Key idea:
+"Paired measurements are converted to a single measurement by taking the difference between them" (pg 330).  This is why I say a paired t-test should be called a "1-sample t-test on paired data." A paired t-test is exactly the same as a 1-sample t-test.
+
+
+If this example was done in R, you should be able to identify and understanding the relevance of the following things: mean of the differences, t and p,  and the 95% confidence interval around the mean difference.
+
+#### Estimating mean difference from paired data
+
+#### Example 12.2: So macho it makes you sick?
+
+#### Table 12.2-1
+
+Note how the data is set up and the difference "d" is calculated.
+
+#### Figure 12.2-2
+
+You should know why we'd care about the differences in this situation.
+
+On pages 332-333 Don't worry about teh math, I didn't emaphsize this.
+
+#### Paired t-test
+
+You should know how the hypotheses are formulated (page 333) but don't worry about the math (page 334). eg, You DO NOT need to know how to calculate the standard deviation or standard error for the difference between means.  This is provided in R's output
+
+#### Assumptions
+
+Skip this - I will talk about this when I talk about ANOVA assumptions for the final unit of the class
+
+
+### 12.3 Two-sample comparison of the means
+
+"2-sample" means two groups, two treatments, two populations, etc.
+
+If this example was done in R, you should be able to identify and know the meaning of the following things from the output of t.test(): t, df, the difference between means, p, the 95% confidence for the differences between means.  
+
+#### Exmaple 12.3 Spike or be spiked
+
+#### Confidence interval for the difference between two means
+
+You don't need to know the math, but you should know why we are interested in the difference, and its CI!
+
+(So, most of 338 and 339 can be skipped)
+
+#### Hypotheses for Example 12.3
+
+On page 339 they spell out the hypotheses.  Check these out.
+
+On page 340 they go back to the math.  Don't worry about it
+
+#### Assumptions
+
+We'll cover assumptions along with ANOVA
+
+```{r eval=FALSE, include=FALSE}
+# A two-sample t-test when standard deviations are unequal (pg 342)
+# You need to know that we typically assume the standard deviations are unequal and the default (normal) t-test in R uses a thing called "Welch's approximate t-test" aka "Welch's correction" or "Welch's t-test".  You do not need to know any equations related to this - R will do the math.  However, you should know that this reduces the degrees of freedom (df) and typical results in df that are no a whole number.
+
+```
+
+
+#### A two-sample t-test when standard devaitions are unequal
+
+We'll cover this along with ANOVA.
+
+#### 12.4 Using the correct sampling units
+
+I did not focus on this topic (sampling units) but did use these data in lab as an example for t-tests.  The data are also in the *wildlifeR* package.
+
+#### Example 12.4 So long; thanks to all the fish
+
+A good example, used in lab.
+
+#### Figure 12.4-1
+
+You should be able to look a this graph and predict the p-value from the CIs.
+
+### 12.5 The fallacy of indirect comparisons
+
+
+#### Example 12.5 Mommy's baby, Daddy's maybe
+
+#### Figure 12.5-1
+
+### 12.6 Interpreting overlap of confidence intervals
+
+Discussed in lecture as the idea of "inference by eye."
+
+#### Figure 12.6-1
+
+You should be able to predict the outcome of t-test by looking at the CIs.
+
+### 12.7 Comparing variances - 

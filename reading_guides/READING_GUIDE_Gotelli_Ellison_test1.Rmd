@@ -1,0 +1,87 @@
+---
+title: 'Study Guide: Test 1 - Chapter 6 Designing Successful Field Studies, Gotelli
+  & Ellison'
+author: "brouwern@gmail.com"
+date: "October 2, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Chapter 6 Designing Successful Field Studies
+
+Read only section in red boxed.  Key vocab and the section is occurs in are listed below.
+
+### What is the effect of factor X on variable Y? (pg 138)
+
+This is a very common type of study in ecology, conservation, and wildlife.  What is the effect of pH on the growth of waterthrush?  What is the impact of coyote predation on fawn survival?  What is the effect of nitrogen fertilizer on sugar maple growth?  
+
+Vocab
+**Manipulative experiment:** 
+**Natural experiment:**
+
+
+
+### Manipulative experiments  (pg 139)
+
+Vocab
+**Manipulative experiment**
+**Cause and effect**
+**Confounding**
+
+### Natural Experiments (pg 141)
+
+Vocab
+**Natural experiment**
+
+### Replication (pg 149)
+
+#### How much replication?
+
+#### How many replicates are Affordable?
+
+#### Large-scale studies and Environmental Impacts
+
+Vocab
+**BACI design**
+
+I also mention 
+**BA** - before vs after
+**CI** - control vs. impact (just done after)
+
+#### Ensuring Independence
+
+Vocab
+**Independence**
+
+**Figure 6.6**
+This figure present a problem where what happens in one plot impacts a nearby plot; I described this as the effect of one plot "bleeding" over into the next plot.
+
+## Avoiding Confounding Factors (153)
+
+**Figure 6.6** A confounded experimental design due to an environmental gradient; in this case, temperature varies between plots.
+
+## Replicaiton & randomization  (154)
+
+Vocab:
+**Replication**
+**Randomization**
+
+**Figure 6.7** Proper randomization in the face of an environmental gradient.
+
+**Figure 6.8** An experimental design with lots of replication, but totally confounded.  All the controls on one side and all the treatments on the other.
+
+### Does the range of Treatments or Census Categories Bracket or Span the Range of Possible Environmental Conditions?
+
+### Have Appropriate Controls Been Established to Ensure That Results Relfect Variation only in the Factor of Interest?
+
+### Have all replicates been manipulated the same way except for the Intended Treatment Application?
+
+### Summary
+**Haphazard**
+

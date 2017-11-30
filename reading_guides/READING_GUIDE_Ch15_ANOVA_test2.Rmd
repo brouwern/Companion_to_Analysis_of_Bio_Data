@@ -1,0 +1,114 @@
+---
+title: 'Reading Guide: Test 2 - Chapter 15 Analysis of Biological Data 2nd ed.'
+author: "brouwern@gmail.com"
+date: "November 4, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## CHAPTER 15: COMPARING MEANS OF MORE THAN TWO GROUPS
+
+### 15.1 The Analysis of variance
+
+#### Example 15.1 The knees who say night
+
+You should be able to read an example like this and know that ANOVA needs to be used to analyze the data
+
+#### Figure 15.1-1
+
+You should be able to look at graph like this and know that ANOVA needs to be used to analyze the data
+
+
+#### Hypotheses
+
+You shoudl be able to relate the hypotheses in terms of mu and know what the null hypothesis and alt. hypothesees are.
+
+#### ANOVA in a nutshell
+
+[2017 - skipped]
+
+#### ANOVA tables
+
+[2017 - skipped]
+
+#### Partitioning the sum of square (pg 464) 
+
+[2017 - skipped]
+
+#### Calculating the mean square (pg 466)
+
+[2017 - skipped]
+
+#### The Variance ratio, F (pg 467)
+
+[2017 - skipped]
+
+#### Variation explained R2
+
+[2017 - skipped]
+
+#### ANOVA with two groups
+
+[2017 - skipped]
+
+### 15.2 Assumptions and alternatives
+
+Will cover this in test 3
+
+#### Robustness of ANOVA (pg 470)
+
+Will cover this in test 3
+
+#### Data transformations (pg 471)
+
+Will cover this in test 3
+
+#### Nonparametric alternatives to ANOVA (pg 471)
+
+Will cover this in test 3
+
+
+```{r eval=FALSE, include=FALSE}
+ # You should know that there are non-parametric alternatives to ANOVA. These involve converting the data to their ranks.
+
+```
+
+
+### 15.3 Planned comparisons
+
+We covered this concept in detail
+
+**Planned comparison**
+
+#### Planned comparisons between means (pg 472-3)
+
+We skipped the math
+
+### 15.4 Unplanned comparisons
+
+The method they focus on, the **Tukey-Kramer test**, is carried out using the TukeyHSD() function in R.  They discuss the **Bonferonni correction** in a seperate Interleaf.
+
+### Example 15.4 Wood Wide Web
+
+You should understand how the hypotheses are formulated and the Tukey test interpretted.  
+
+### Assumptions (pg 477)
+
+We will cover this on test 3.
+
+#### [15.5 Fixed and Random effects ]
+
+[Skip]
+
+#### [15.6 ANOVA with randomly chosen groups - SKIP!]
+
+[Skip]
+
+### 15.7 Summary
+
+Read appropriate sections.

@@ -1,0 +1,104 @@
+---
+title: 'Study Guide: Test 1 - Chapter 2 Analysis of Biological Data 2nd ed.'
+author: "brouwern@gmail.com"
+date: "October 2, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 2 Displaying Data
+
+Displaying data well is crucial in science, but easy to do poorly.  An increasing number of people are specializing in the production of "infographics" for displaying complex quantitative information in an effective manner.
+
+### 2.1 Guidelines for effective graphs
+
+#### How to draw a bad graph
+
+**Figure 2.1-1** This is a bad graph.  3D plots are popular b/c they are easy to make in Excel but they should be avoided.
+
+#### How to draw a good graph
+
+**The book's rules for good plots**
+
+1. "Show the data": this often means showing the raw data, or using a boxplot or histogram to reveal information about the distribution of the data.
+2. "Make patterns in the data easy to see": Plot raw data if possible; use color and shapes for different symbols.  Use "jittering" so that data points don't overlap.
+3. "Represent magnitudes honestly"
+4. "Draw graphical elements clearly": make the font large enough to read, clearly label the axes, add a legend; make it color-blind friendly.
+
+
+My rules are similar, just with some further emphasis on certain things:
+
+1. Show the **raw data** if possible
+2. Show **distributional info** if possible
+3. ALWAYS Include **error bars** around means
+4. ALWAYS Include error bars around means
+5. Make patterns in the data easy to see
+6. Represent magnitude honestly
+7. Draw graphical elements clearly
+8. **Include a legend** and label things clearly
+
+By "distributional information" I mean info on the spread, shape, density, variation etc in the data.  This is best done with a boxplot or a histogram, or the raw data.
+
+
+**Figure 2.1-2** The graph on the left illustrates the principal of "showing the data", while the one of the right hides the data.  If there were more datapoints, a boxplot would be a good choice instead of showing every data point.
+
+**Figure 2.1-3** The upper part of the graph is bad for 2 reason.  1st, is unnecessarily uses 3D, which add no information and makes it harder to see exactly how high each bar is.  2nd, the y axis starts at a high number, which accentuates the difference between the far left and far right bars.
+
+### 2.2 Showing data for one variable
+
+Note: in 2017 I DID NOT emphasize the vocab terms on page 30
+
+#### Showing numerical data: frequency table & histogram (pg 33)
+
+I emphasized histograms.  I love histograms.
+
+The authors mention that "the shape of a frequency distribution is more obvious in a histogram" than a table with the raw data (page 35).  I similarly emphasized that when possible, avoid tables and use graphs.
+
+
+#### Describing the shape of a histogram (pg 36)
+
+I did not emphasize this in class but it is very very important.  Please be familiar with these terms.
+
+Vocab:
+**Symmetry** "A frequency distribution is symmetric if the pattern of" data on the "left half of the histogram is the mirror image" more or less "of the pattern on the right half" (pg 36)
+**Skew**: "asymmetry in the shape of a frequency distribution."
+**Outliers** Extreme values "well outside the range of values of other observations in the dataset"
+
+[In 2017 I did not emphasize the section "How to draw a good histogram"]
+
+### 2.3 Showing association between two variables
+
+[in 2017 I didn't emphasize Showing association between categorical variables, grouped bar plots, or mosaic plots]
+
+#### Showing association between numerical variables: scatter plot (pg 42)
+
+Scatter plots are very important.
+
+#### Showing association between a numerical and a categorical variable
+
+These plots are very important, especially boxplots.
+
+Compare **FIgure 2.3-4** and **Figure 2.3-5** to see how information can be presented as a boxplot (3-4) or histograms (3-5).
+
+### 2.4 Showing trends in time and space
+
+### Line graph
+
+As in **Figure2.4-1**, line graphs are frequently used to show how things change over time, such as populations or rates of infection.
+
+Vocab
+
+
+### 2.5 Howw to make good tables
+
+This is an important section but I did not emphasize it in 2017, except to say that the same principals that apply to plots also apply to tables.  Moreover, its better to use plots than tables.
+
+### 2.6 Summary
+**Line graph**
+
+

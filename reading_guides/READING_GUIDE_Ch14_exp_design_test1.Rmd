@@ -1,0 +1,146 @@
+---
+title: 'Study Guide: Test 1 - Chapter 1 Analysis of Biological Data 2nd ed.'
+author: "brouwern@gmail.com"
+date: "October 3, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 14 Experimental Design
+
+Key idea I emphasized: "In an **experimental study**, the researcher assigns treatments to units or subject so the differences in response can be compared.  In an **observational study**...nature does the assigning of treatments to subjects.  The researcher has no influence over which subjects receive which treatment." (page 423, emphasis mine).  As they continue the difference is important b/c only experiments can identify **causal relationships**.
+
+### 14.1 Why do experiments?
+
+#### Confounding variables
+
+Vocab:
+
+**Confounding variable:** A factor that "masks or distorts the causal relationship between measured variables in a study."  (pg 424)
+
+Vocab:
+
+**Experimental artifact** "a bias in a measurement produced by unintended consequences of experimental procedures" (pg 425)
+
+### 14.2 Lessons from clinical trials
+
+Vocab:
+
+**Clinical trial:** "An experimental study in which 2 or more treatments are applied to human participants." (page 426)
+
+#### Design components
+
+This section is a good summary of ideas elaborated on subsequently in 14.3 and 14.4
+
+### 14.3 How to reduce bias
+
+#### Simultaneous control group
+
+Vocab:
+
+**Control group**
+
+**Positive control:** I don't think the authors use this term explicitly, but they discuss it on page 429 when they they refer to a clinical study that uses the "best existing treatment"
+
+
+#### Randomization
+
+
+Vocab:
+
+**Randomization**
+
+**Completely randomized design**
+
+**Haphazard**
+
+They authors convey a very important point much better than I did in my lecture:
+"The virtue of randomization is that it **breaks the association** between possible **confounding variables** and the **explanatory variable**, allowing **causal relationships** between **explanatory** and **response variables** to be assessed" (pg 429).  This is a hard idea but key.  Randomization spreads out the impact of confounding variable evenly in across the treatment so it doesn't contaminate either one.  The authors continue "Randomization doesn't eliminate the variation contributed by confounding variables, only their correlation with the treatment.  It ensures that variation from confounding variables is spread more evenly between the different treatment groups.  If randomization is done properly, any remaining influence of confounding variables occurs by chance alone, which statistical methods can account for."  If randomization isn't done, a confounding variable could end up accidentally having more influence on one treatment or the other and bias the results.
+
+#### Blinding
+
+**Blinding** "the process of concealing information from participants (sometimes researchers) about which individuals receive which treatment" (pg 431)
+
+**Single-blind experiment**
+
+**double-blind experiment**
+
+**Triple-blind experiment** The authors don't discuss this but I did in class.  Triple blinding involves hiding information from the person who does the analysis.
+
+#### Replication
+
+Vocab:
+
+**Replication**
+
+**Independent**
+
+**Experimental Unit**
+
+**Figure 14.4-1** Is a simplistic but good explanation of how to design experiments that have true replication.  I used a similar example of plants in one greenhouse vs. several.
+
+The material here is related the "Interleaf" on Pseudoreplication. (Interleaf 2, page 115) which you should read.
+
+[Note: I didn't discuss the version of the standard error equation that appears on the bottom of page 433]
+
+#### Balance
+
+Vocab:
+
+**Balance** "In a balanced experimental design, all treatments have equal sample size" (pg 434)
+
+
+#### Blocking
+
+Vocab
+
+**Blocking** "is grouping of experimental units that have similar properties.  Within each block, treatments are randomly assigned to experimental units" (pg 435)
+
+**Blocks**
+
+The term **randomized block design** was not discussed.
+
+**Figure 14.4-2** is a good figure of blocking in a plant study.
+
+#### Example 14.4A
+This is an excellent example.
+
+The list of potential types of blocks on page 437 are good.
+
+[I did not discuss the idea of extreme treatments]
+
+### 14.5 Experiments with more than on factor
+
+[This section was not discussed
+
+### 14.6 What if you can't do experiment
+
+[This section was not discussed]
+
+### 14.7 Choosing a sample size
+
+The bottom of page 441 and top of page 442 are some important thoughts on the importance of choosing an appropriate sample size.
+
+#### Plan for precision
+
+[This section was not discussed]
+
+#### Plan for power
+
+[This section was not discussed]
+
+#### Plan for data loss
+
+[This section was not discussed]
+
+### 14.8 Summary
+
+As always, the summary section is great.
+
+
+

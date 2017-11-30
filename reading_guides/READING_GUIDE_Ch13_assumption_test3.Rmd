@@ -1,0 +1,52 @@
+---
+title: "Reading Guide: Test 2 - Chapter 15 Analysis of Biological Data 2nd ed."
+author: "brouwern@gmail.com"
+date: "November 4, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## CHAPTER 13: ASSUMPTIONS
+
+### Introduction: pages 369 - 368
+The numbered bullet points 1 to 3 are especially important to know.  They were discussed during my lecture on Fri. Nov 4.  They are sometimes called "The ANOVA assumptions", "the assumptions of ANOVA", "statistical assumptions", "assumptions of a t-test," etc.
+
+### 13.2 When to ignore violations of assumptions
+I discussed why you can sometimes ignore violations of these assumptions, and the concepts of "robustness", during my lecture on Fri. Nov 4.
+
+#### Violations of Normality (pg 375)
+Here they mention the mathematical reason why you can get away with ignoring violations of the assumption of normality: the central limit theorem (discussed in chapter 10).  You should know that there is indeed a mathematical reason why you can sometimes get away with ignoring the assumption of normaility.
+Unequal standard deviations (pg 376)
+
+They note that Welch's correction to the t-test largely solves this problem.
+
+### 13.3 Data transformations
+
+#### Log transformation (pg 377)
+You should know that this is the most common type of transformation.  They note that the natural log (ln) is more common than the base 10 log (log10).
+
+#### Figure 13.3-1
+[Arcsine transformation - SKIP!]  This is actually a discredited approach - not recommended.
+
+#### The square-root transformation (pg 381)
+2nd most common type of transformation, with similar effect as log.
+[Other transformations - SKIP] These are rarely used in practice
+[Confidence intervals with transformations - SKIP] Important concept, but didn't cover it
+
+[A caveat: Avoid multiple test with transformations - SKIP] Important concept, but didn't cover it
+
+## # 13.4 Nonparameteric alternatives to one-sample and paired t-test
+You should know that there are a thing called nonparametric statistical tests that are often used when ANOVA assumptions are not met.  These methods typically convert the data into ranks, which allows different analyses to be done but which result in the loss of information.  You do not need to know the particular types of tests.
+
+#### [Sign test - SKIP]
+[Other specific non-parametric methods - skip]
+
+### 13.8 Permutation tests
+You should know that there are computer-based methods called permutation tests.  See the definitions I handed out.  The bullet point in the summary section on permutation tests on page 399 is very concise.
+
+### 13.9 Summary
+This book generally has an excellent summary section.  Definitely see the one on permutation tests.

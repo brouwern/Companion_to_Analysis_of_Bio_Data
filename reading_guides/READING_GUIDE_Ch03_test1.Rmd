@@ -1,0 +1,94 @@
+---
+title: 'Study Guide: Test 1 - Chapter 3 Analysis of Biological Data 2nd ed.'
+author: "brouwern@gmail.com"
+date: "October 3, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Describing Data
+
+### 3.1 Arithemetic mean and standard deviation
+
+#### The sample mean
+
+We call the **sample mean** y.bar (In contrast in chapter 4 we talk about "mu", the population mean.)
+
+#### Variance and standard deviation
+
+I won't ask you to write these equations from memory, but I will expect you to know the difference between the equation for the variance vs. the standard deviation, what the numerator and denominator mean, etc.  For example, the square root of the variance is the standard deviation; the numerator of the variance is the "sum of square"; the "n" in the denominator of these equations is the sample size.
+
+
+Vocab
+
+**Variance:** A measure of spread / variability of the data; the precursor to the standard deviation.  The numerator is the sum of squares.  The n in denominator is the sample size.  You never plot the SD on a graph.
+
+\[s^2 = {\frac{\sum\limits_{i=1}^{n} \left(Y_{i} - \bar{Y}\right)^{2}} {n-1}}\]
+
+
+**Standard deviation** "A common measure of the spread of a distribution.  It indicates just how different measurements typically are from the mean."  While very useful, we rarely plot the SD on a graph.
+
+\[s = \sqrt{\frac{\sum\limits_{i=1}^{n} \left(Y_{i} - \bar{Y}\right)^{2}} {n-1}}\]
+
+
+**Sum of square**: The numerator in the equations for the variance (s^2; var) and standard deviation (s; SD.
+
+
+### Rounding means, standard deviatinos, and other quantities
+
+A good little section on how to round numbers
+
+#### Coefficient of variation
+
+[I did not cover this in 2017]
+
+#### Calculating mean and SD from a frequency table
+
+[skipped in 2017]
+
+#### Effect of changing measurement scale
+
+[skip]
+
+### Median and interquartile range (pg 73)
+
+Vocab:
+
+**Median**
+
+**Interquartile range (IQR):** "The difference between the 3rd and 1st quartiles of the data.  It is the span of the middle 50% of the data.
+
+**First quartile:**
+
+**Third quartile:**
+
+**Boxplot**
+
+Note that the "whiskers" extending above and below the bar plot are NOT error bars!  They represent the range.
+
+### How measures of location and spread compare
+
+This is a good section for understanding the difference between the mean and median.
+
+"Median and mean measure different aspects of the location of a distribution.  The median is the middle value of the data, whereas the mean is its center of gravity." (pg 80).  If the distribution is perfectly **symmetrical** the median = mean.  The more **skewed** a distribution is, the further the median is from the mean.
+
+
+#### Displaying cumulative relative frequencies
+
+[Did not emphasize in 2017]
+
+### 3.5 Proportion
+
+[Did not emphasize in 2017]
+
+
+### 3.6 Summary
+
+Their summaries are always good.  An especially important point is the 4th one.
+
+
